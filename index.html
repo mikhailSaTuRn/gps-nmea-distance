@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>    
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    
+
+        <script>
+
+            L_NO_TOUCH = false;
+
+            L_DISABLE_3D = false;
+
+        </script>
+
+    
+
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+
+    
+
+            <meta name="viewport" content="width=device-width,
+
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+            <style>
+
+                #map_2463c1196a9842b9a8a74a2fc7cf2967 {
+
+                    position: relative;
+
+                    width: 100.0%;
+
+                    height: 600.0px;
+
+                    left: 0.0%;
+
+                    top: 0.0%;
+
+                }
+
+            </style>
+
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+
+</head>
+
+<body>    
+
+    
+
+            <div class="folium-map" id="map_2463c1196a9842b9a8a74a2fc7cf2967" ></div>
+<div style="font-size: 40px; text-align: center">Distance covered: 10.65km</div>
+        
+
+</body>
+
+<script>    
+
+    
+
+            var map_2463c1196a9842b9a8a74a2fc7cf2967 = L.map(
+
+                "map_2463c1196a9842b9a8a74a2fc7cf2967",
+
+                {
+
+                    center: [0, 0],
+
+                    crs: L.CRS.EPSG3857,
+
+                    zoom: 1,
+
+                    zoomControl: true,
+
+                    preferCanvas: false,
+
+                }
+
+            );
+
+
+
+            
+
+
+
+        
+
+    
+
+            var tile_layer_bb7dede426124c8ab7b430579b484a4f = L.tileLayer(
+
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+
+            ).addTo(map_2463c1196a9842b9a8a74a2fc7cf2967);
+
+        
+
+    
+
+            ant_path_356852f33e5f444ea76a948a39e9e2be = L.polyline.antPath(
+
+              [[52.53341666666667, 13.387833333333333], [52.5348, 13.389366666666668], [52.53596666666667, 13.391033333333333], [52.537, 13.392633333333333], [52.53776666666667, 13.394333333333334], [52.53836666666667, 13.396533333333334], [52.53906666666666, 13.39885], [52.53981666666667, 13.4016], [52.54055, 13.4043], [52.5411, 13.406933333333333], [52.541333333333334, 13.409333333333333], [52.541016666666664, 13.411766666666667], [52.540683333333334, 13.414183333333334], [52.54026666666667, 13.4165], [52.53993333333333, 13.418816666666666], [52.53953333333333, 13.421516666666667], [52.5391, 13.42405], [52.53776666666667, 13.4234], [52.53658333333333, 13.422716666666666], [52.53463333333333, 13.421383333333333], [52.532, 13.419933333333333], [52.52925, 13.417733333333333], [52.52675, 13.415383333333333], [52.524883333333335, 13.41285], [52.522666666666666, 13.40955], [52.521966666666664, 13.408516666666667], [52.52165, 13.408166666666666], [52.52145, 13.407566666666666], [52.52113333333333, 13.406966666666667], [52.52003333333333, 13.4049], [52.51833333333333, 13.407133333333334], [52.51695, 13.408983333333333], [52.516083333333334, 13.410483333333334], [52.5158, 13.412283333333333], [52.5158, 13.415983333333333], [52.515566666666665, 13.417866666666667], [52.513866666666665, 13.41765], [52.51238333333333, 13.417183333333334], [52.51096666666667, 13.416283333333332], [52.50815, 13.414133333333334], [52.50626666666667, 13.41285], [52.50483333333333, 13.41165], [52.50405, 13.411], [52.50386666666667, 13.410533333333333], [52.5042, 13.40885], [52.5048, 13.40645], [52.50566666666667, 13.40315], [52.50645, 13.4004], [52.50718333333333, 13.395766666666667], [52.50671666666667, 13.392416666666668], [52.50666666666667, 13.3895], [52.506616666666666, 13.386933333333333], [52.506616666666666, 13.386233333333333], [52.5087, 13.384866666666667], [52.51005, 13.384266666666667], [52.511466666666664, 13.3835], [52.51396666666667, 13.382383333333333], [52.515116666666664, 13.38135], [52.515, 13.380666666666666], [52.51493333333333, 13.3803], [52.51513333333333, 13.380233333333333], [52.5152, 13.38045]],
+
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [20, 30], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": "True", "smoothFactor": 1.0, "stroke": true, "weight": 5}
+
+        ).addTo(map_2463c1196a9842b9a8a74a2fc7cf2967);
+
+        
+
+    
+
+            map_2463c1196a9842b9a8a74a2fc7cf2967.fitBounds(
+
+                [[52.50386666666667, 13.380233333333333], [52.541333333333334, 13.42405]],
+
+                {}
+
+            );
+
+        
+
+</script>
